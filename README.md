@@ -1,12 +1,15 @@
 # Look4Sat-AntRunner-Controller
  * [Introduce](#introduce)
  * [How to Use](#how-to-use)
+ * [How to Compile](#how-to-compile)
  * [Rerfernce](#reference)
 
 ## Introduce
 This project works as a component of my [AntRunner](https://github.com/wuxx/AntRunner) project to control my rotator wirelessly through the Look4Sat. Of course, if you have your own rotator that needs wireless control, this project should also provide some reference.
 
-![AntRunner-1](https://github.com/wuxx/AntRunner/blob/master/doc/1.jpg)
+![top](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/Top.jpg)
+![bottom](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/Bottom.jpg)
+![all-in-one](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/All-in-one.jpg)
 
 ## How to Use
 
@@ -38,6 +41,16 @@ Green light blink quickly | Look4Sat is sending control commands
 The use of look4sat is very simple, just select a satellite entry and enter, look4sat will start sending control commands to the controller.
 ![satelite-select](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/satelite-select.jpg)
 ![satelite-track](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/satelite-track.jpg)
+
+## How to Compile
+the source code is compiled under esp-idf v5.1
+```
+$cd Look4Sat-AntRunner-Controller/software/
+$cd ~/esp-idf && . ./export.sh && cd -
+$idf.py set-target esp32c3
+$idf.py build
+$idf.py flash monitor
+```
 
 ## Reference
 - AntRunner (https://github.com/wuxx/AntRunner) 

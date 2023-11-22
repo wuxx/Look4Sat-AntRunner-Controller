@@ -5,7 +5,7 @@
  * [Rerfernce](#reference)
 
 ## Introduce
-This project works as a component of my [AntRunner](https://github.com/wuxx/AntRunner) project to control my rotator wirelessly through the Look4Sat. Of course, if you have your own rotator that needs wireless control, this project should also provide some reference.
+This project works as a component of my [AntRunner](https://github.com/wuxx/AntRunner) project to control my rotator wirelessly through the Look4Sat. Of course, if you have your own rotator that needs wireless control, this project should be helpful.
 
 ![top](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/Top.jpg)
 ![bottom](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/Bottom.jpg)
@@ -23,7 +23,7 @@ Then enter 10.10.10.1 in the browser to enter the operation background, select y
 
 ### Config the Look4Sat 
 
-Open the configuration interface of Look4Sat, just fill in the IP address of module, and then the entire system can start working. 
+Open the configuration interface of Look4Sat, just fill in the IP address of module, and then the entire system can start working.   
 ![look4sat-config](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/look4sat-config.png)
 
 You can get the status of the current module by checking the LED lights. The details are as follows  
@@ -38,7 +38,7 @@ Green light blink quickly | Look4Sat is sending control commands
 
 ### Look4Sat Usage
 
-The use of look4sat is very simple, just select a satellite entry and enter, look4sat will start sending control commands to the controller.
+The use of look4sat is very simple, just select a satellite entry and enter, look4sat will start sending control commands to the controller.  
 ![satelite-select](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/satelite-select.jpg)
 ![satelite-track](https://github.com/wuxx/Look4Sat-AntRunner-Controller/blob/master/doc/satelite-track.jpg)
 

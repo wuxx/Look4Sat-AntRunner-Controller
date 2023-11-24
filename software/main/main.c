@@ -1077,8 +1077,6 @@ void app_main(void)
 #endif
 
  
-    //while(1) { vTaskDelay(1000 / portTICK_PERIOD_MS); }
-
     rot_req_queue = xQueueCreate(256, sizeof(struct rot_req *));
 
 #define CONFIG_EXAMPLE_IPV4
@@ -1125,7 +1123,10 @@ void app_main(void)
 
                 /* 500ms auto timeout state transition */
                 if ((curr_systime - last_xfer_systime) > 500000) {
-                    sys_status = LOOK4SAT_IDLE;
+                    if (sys_status == LOOK4SAT_XFER) {
+                        sys_status = LOOK4SAT_IDLE;
+                    }
+
                 }
 
                 break;
